@@ -4,34 +4,41 @@ html,body{
 }
 
 #container{
-	width:90%;
-	height: 90%;
-	margin-left: 5%;
-	margin-top:2%;
-	margin-right:5%;
-	position:relative;
+	width:100%;
+	height: 100%;
 	border:3px solid #73AD21;
-	align-items: center;
-	justify-content: center;
+	background-color: #115589;
+	margin:0 auto;
+
+
 
 
 }
 
 #burnfat{
-	width:100%;
-	height:50%;
-	padding: 10% 25% 0% 25%;
-	border:1px solid red;
+	width:1000px;
+	height:120px;
 	font-size:12em;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+	top: 50%;
+	margin-top: -100px;
 }
 #notgas{
 	width:100%;
 	height:50%;
-	padding: 0% 35% 0% 35%;
 	border:1px solid red;
 	font-size:8em;
+	position:relative;
 }
 .word1{
 	font-family:'Rockwell';
 	float:left;
+	position: relative;
+	color:#f5c11d;
+
+}
+#b{
+	
 }
