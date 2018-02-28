@@ -16,16 +16,16 @@ body {
 }
 
 #container{
-	width:100%;
-	height:100%;
-	position: relative;
+	width:1680px;
+	height:1050px;
+	/*position: relative;*/
 	/*background-color: #115589;*/
 	overflow: hidden;
 }
 
 #burnfat{
-	/*width:1000px;
-	height:120px;*/
+	width:1680px;
+	height:1050px;
 	font-size:10em;
 	position: absolute;
 	left: 50%;
@@ -137,7 +137,7 @@ body {
 
 @keyframes tone_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:200px;left:-220px;color:#b02b24;opacity:1;}
 	35%{top:200px;left:-220px;color:#b02b24;opacity:1;}
 	60%{top:200px;left:-220px;color:#b02b24;opacity:0;}
@@ -150,8 +150,8 @@ body {
 }
 
 #notgas{
-	/*width:1000px;
-	height:120px;*/
+	width:1680px;
+	height:1050px;
 	font-size:7em;
 	/*border:3px solid red;*/
 	position:absolute;
@@ -163,7 +163,7 @@ body {
 
 @keyframes ntwo_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:-230px;left:480px;font-size:1.44em;color:#b02b24;opacity:1;}
 	35%{top:-230px;left:480px;font-size:1.44em;color:#b02b24;opacity:1;}
 	60%{top:-230px;left:480px;font-size:1.44em;color:#b02b24;opacity:0;}
@@ -177,7 +177,7 @@ body {
 
 @keyframes o_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:-120px;left:372px;font-size:1.44em;color:#b02b24;opacity:1;}
 	35%{top:-120px;left:372px;font-size:1.44em;color:#b02b24;opacity:1;}
 	60%{top:-120px;left:372px;font-size:1.44em;color:#b02b24;opacity:0;}
@@ -191,7 +191,7 @@ body {
 
 @keyframes ttwo_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:-10px;left:275px;font-size:1.44em;color:#b02b24;opacity:1;}
 	35%{top:-10px;left:275px;font-size:1.44em;color:#b02b24;opacity:1;}
 	60%{top:-10px;left:275px;font-size:1.44em;color:#b02b24;opacity:0;}
@@ -205,7 +205,7 @@ body {
 
 @keyframes g_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:-350px;left:440px;font-size:1.44em;color:#b02b24;opacity:1;}
 	35%{top:-350px;left:440px;font-size:1.44em;color:#b02b24;opacity:1;}
 	60%{top:-350px;left:440px;font-size:1.44em;color:#b02b24;opacity:0;}
@@ -219,7 +219,7 @@ body {
 
 @keyframes atwo_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:-230px;left:340px;font-size:1.44em;color:#b02b24;opacity:1;}
 	35%{top:-230px;left:340px;font-size:1.44em;color:#b02b24;opacity:1;}
 	60%{top:-230px;left:340px;font-size:1.44em;color:#b02b24;opacity:0;}
@@ -233,7 +233,7 @@ body {
 
 @keyframes s_move{
 	0%{top:0px;left:0px;opacity:1;}
-	10%{opacity:0;}
+	5%{opacity:0;}
 	25%{top:-120px;left:255px;font-size:1.44em;color:#b02b24;opacity:1;}
 	35%{top:-120px;left:255px;font-size:1.44em;color:#b02b24;opacity:1;}
 	60%{top:-120px;left:255px;font-size:1.44em;color:#b02b24;opacity:0;}
@@ -265,7 +265,7 @@ body {
 
 @keyframes o_fade{
 	0%{opacity:1;}
-	80%{opacity:1;}
+	75%{opacity:1;}
 	85%{opacity:0;}
 	100%{opacity:0;}
 }
@@ -288,6 +288,8 @@ body {
 }*/
 
 .minneapolis{
+	width:1680px;
+	height:1050px;
 	font-family:'Rockwell';
 	color:#cd2534;
 	font-size:10em;
@@ -310,9 +312,6 @@ body {
 	100%{opacity:1;}	
 }
 #message{
-	/*border:3px solid white;*/
-	/*width:1000px;
-	height:120px;*/
 	font-family:'Rockwell';
 	color:black;
 	font-size:2.5em;
@@ -370,10 +369,12 @@ a:active{
 	animation:bicycle 10s forwards;
 }
 @keyframes wheel{
-	0%{opacity:0;}
+	from{opacity:1;transform:rotate(0deg);}
+	to{opacity:1;transform: rotate(360deg);}
+	/*0%{opacity:0;}
 	75%{opacity:0;}
 	95%{opacity:1;}
-	100%{opacity:1;-webkit-transform:rotate(360deg;)transform:rotate(360deg);}	
+	100%{opacity:1;-webkit-transform:rotate(360deg;)transform:rotate(360deg);}*/	
 }
 #wheel{
 	width:100px;
@@ -383,9 +384,9 @@ a:active{
 	margin-left:-76px;
 	top:40%;
 	margin-top:42px;
-	/*opacity:0;*/
-	animation:wheel 10s linear infinite;
-	animation-delay:0s;
+	opacity:0;
+	animation:wheel 2s linear infinite;
+	animation-delay:9.2s;
 	/*-webkit-animation:spin linear infinite;*/
 	/*-moz-animation:spin linear infinite;*/
 }
